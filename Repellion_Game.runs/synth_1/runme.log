@@ -1,0 +1,723 @@
+
+*** Running vivado
+    with args -log VGA_To_HDMI.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_To_HDMI.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source VGA_To_HDMI.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/19896/Repellion_Game/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top VGA_To_HDMI -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23596 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 955.914 ; gain = 233.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VGA_To_HDMI' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:29]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'C1' of component 'clk_wiz_0' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/clk_wiz_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/vga_controller_640_60.vhd:75' bound to instance 'V1' of component 'vga_controller_640_60' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (1#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/vga_controller_640_60.vhd:88]
+INFO: [Synth 8-3491] module 'static_background' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/static_background.vhd:26' bound to instance 'Background0' of component 'static_background' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'static_background' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/static_background.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'static_background' (2#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/static_background.vhd:33]
+INFO: [Synth 8-3491] module 'MY_IMAGE_DRIVER' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/MY_IMAGE_DRIVER.vhd:25' bound to instance 'MainCharacter0' of component 'MY_IMAGE_DRIVER' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'MY_IMAGE_DRIVER' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/MY_IMAGE_DRIVER.vhd:39]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'W1' of component 'blk_mem_gen_0' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/MY_IMAGE_DRIVER.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/blk_mem_gen_0_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'MY_IMAGE_DRIVER' (3#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/MY_IMAGE_DRIVER.vhd:39]
+INFO: [Synth 8-3491] module 'Enemy' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:32' bound to instance 'Enemy1' of component 'Enemy' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'Enemy' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:47]
+INFO: [Synth 8-3491] module 'blk_mem_gen_1' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/blk_mem_gen_1_stub.vhdl:5' bound to instance 'E1' of component 'blk_mem_gen_1' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/blk_mem_gen_1_stub.vhdl:14]
+WARNING: [Synth 8-614] signal 'Enemy_Y_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:113]
+WARNING: [Synth 8-614] signal 'Enemy_X_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:113]
+WARNING: [Synth 8-614] signal 'displayed_for_level' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:113]
+WARNING: [Synth 8-614] signal 'display_flag' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:113]
+WARNING: [Synth 8-614] signal 'new_level' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'Enemy' (4#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:47]
+INFO: [Synth 8-3491] module 'Enemy' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:32' bound to instance 'Enemy2' of component 'Enemy' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:269]
+INFO: [Synth 8-3491] module 'Enemy' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:32' bound to instance 'Enemy3' of component 'Enemy' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:274]
+INFO: [Synth 8-3491] module 'Enemy_lfsr' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy_lfsr.vhd:25' bound to instance 'Enemy_lfsr0' of component 'Enemy_lfsr' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'Enemy_lfsr' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy_lfsr.vhd:32]
+WARNING: [Synth 8-614] signal 'Q_temp' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy_lfsr.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Enemy_lfsr' (5#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy_lfsr.vhd:32]
+INFO: [Synth 8-3491] module 'merge_display' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:22' bound to instance 'M1' of component 'merge_display' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'merge_display' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:48]
+WARNING: [Synth 8-614] signal 'Enemy1_Y_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy1_X_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy1_displayed' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy2_Y_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy2_X_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy2_displayed' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy3_Y_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy3_X_pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+WARNING: [Synth 8-614] signal 'Enemy3_displayed' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'merge_display' (6#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:48]
+INFO: [Synth 8-3491] module 'bullet' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:26' bound to instance 'Bullet0' of component 'bullet' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:305]
+INFO: [Synth 8-638] synthesizing module 'bullet' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:43]
+INFO: [Synth 8-3491] module 'bullet_rom' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/bullet_rom_stub.vhdl:5' bound to instance 'Bullet0' of component 'bullet_rom' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'bullet_rom' [C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/bullet_rom_stub.vhdl:14]
+WARNING: [Synth 8-614] signal 'bullet_Y_Pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:105]
+WARNING: [Synth 8-614] signal 'bullet_X_Pos' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:105]
+WARNING: [Synth 8-614] signal 'shooting_flag' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:105]
+WARNING: [Synth 8-614] signal 'display_flag' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'bullet' (7#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/bullet.vhd:43]
+INFO: [Synth 8-3491] module 'UART_Receive_Data' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/UART_Receive_Data.vhd:22' bound to instance 'UART1' of component 'UART_Receive_Data' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:313]
+INFO: [Synth 8-638] synthesizing module 'UART_Receive_Data' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/UART_Receive_Data.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'UART_Receive_Data' (8#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/UART_Receive_Data.vhd:31]
+INFO: [Synth 8-3491] module 'new_level_logic' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/new_level_logic.vhd:23' bound to instance 'new_level_logic0' of component 'new_level_logic' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'new_level_logic' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/new_level_logic.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'new_level_logic' (9#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/new_level_logic.vhd:34]
+INFO: [Synth 8-3491] module 'hdmi_tx_0' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/hdmi_tx_0_stub.vhdl:5' bound to instance 'H1' of component 'hdmi_tx_0' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:319]
+INFO: [Synth 8-638] synthesizing module 'hdmi_tx_0' [C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/hdmi_tx_0_stub.vhdl:29]
+INFO: [Synth 8-3491] module 'GEN_CHAR' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Gen_Char.vhd:26' bound to instance 'Display_Score' of component 'GEN_CHAR' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:324]
+INFO: [Synth 8-638] synthesizing module 'GEN_CHAR' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Gen_Char.vhd:32]
+INFO: [Synth 8-3491] module 'blk_mem_gen_2' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/blk_mem_gen_2_stub.vhdl:5' bound to instance 'my_rom' of component 'blk_mem_gen_2' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Gen_Char.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/.Xil/Vivado-20740-DESKTOP-9ED2F6A/realtime/blk_mem_gen_2_stub.vhdl:14]
+WARNING: [Synth 8-6014] Unused sequential element col3_reg was removed.  [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Gen_Char.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'GEN_CHAR' (10#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Gen_Char.vhd:32]
+INFO: [Synth 8-3491] module 'CHAR_SELECT' declared at 'C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Char_Select.vhd:36' bound to instance 'Scorekeeper' of component 'CHAR_SELECT' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'CHAR_SELECT' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Char_Select.vhd:42]
+WARNING: [Synth 8-614] signal 'char_row' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Char_Select.vhd:54]
+WARNING: [Synth 8-614] signal 'char_col' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Char_Select.vhd:54]
+WARNING: [Synth 8-614] signal 'score' is read in the process but is not in the sensitivity list [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Char_Select.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'CHAR_SELECT' (11#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Char_Select.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'VGA_To_HDMI' (12#1) [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/VGA_to_HDMI.vhd:29]
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[7] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[6] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[5] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[4] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[3] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[2] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[1] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[0] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[15] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[14] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[13] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[12] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[11] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[10] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[9] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[8] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[7] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[6] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[5] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[0] driven by constant 0
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[10]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[3]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[2]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[1]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[0]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[10]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[9]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[3]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[2]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[1]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[0]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port hcount[10]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port hcount[9]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port hcount[8]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port hcount[7]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port hcount[6]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port hcount[5]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port hcount[4]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port vcount[10]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port vcount[9]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port vcount[8]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port vcount[7]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port vcount[6]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port vcount[5]
+WARNING: [Synth 8-3331] design GEN_CHAR has unconnected port vcount[4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1033.195 ; gain = 310.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.195 ; gain = 310.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.195 ; gain = 310.316
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1033.195 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'C1'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'C1'
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'H1'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'H1'
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'MainCharacter0/W1'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'MainCharacter0/W1'
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Enemy1/E1'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Enemy1/E1'
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Enemy2/E1'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Enemy2/E1'
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Enemy3/E1'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Enemy3/E1'
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/bullet_rom/bullet_rom/bullet_rom_in_context.xdc] for cell 'Bullet0/Bullet0'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/bullet_rom/bullet_rom/bullet_rom_in_context.xdc] for cell 'Bullet0/Bullet0'
+Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'Display_Score/my_rom'
+Finished Parsing XDC File [c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'Display_Score/my_rom'
+Parsing XDC File [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/constrs_1/new/vga_pins.xdc]
+Finished Parsing XDC File [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/constrs_1/new/vga_pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/constrs_1/new/vga_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_To_HDMI_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_To_HDMI_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1137.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1137.422 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1137.422 ; gain = 414.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1137.422 ; gain = 414.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_clk_n. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_clk_n. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_clk_p. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_clk_p. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[0]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[0]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[1]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[1]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_n[2]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_n[2]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[0]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[0]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[1]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[1]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for HDMI_tx_p[2]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for HDMI_tx_p[2]. (constraint file  c:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
+Applied set_property DONT_TOUCH = true for C1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for H1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for MainCharacter0/W1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Enemy1/E1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Enemy2/E1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Enemy3/E1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Bullet0/Bullet0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Display_Score/my_rom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1137.422 ; gain = 414.543
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'is_hit_reg' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:183]
+WARNING: [Synth 8-327] inferring latch for variable 'is_hit_reg' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:183]
+WARNING: [Synth 8-327] inferring latch for variable 'is_hit_reg' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy.vhd:183]
+WARNING: [Synth 8-327] inferring latch for variable 'Q_temp_reg' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/Enemy_lfsr.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'Enemy1_Bullet_collision_reg' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:106]
+WARNING: [Synth 8-327] inferring latch for variable 'Enemy2_Bullet_collision_reg' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:107]
+WARNING: [Synth 8-327] inferring latch for variable 'Enemy3_Bullet_collision_reg' [C:/Users/19896/Repellion_Game/Repellion_Game.srcs/sources_1/new/merge_display.vhd:108]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1137.422 ; gain = 414.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 19    
+	   3 Input     11 Bit       Adders := 33    
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 9     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 9     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 30    
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 39    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_controller_640_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module static_background 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+Module MY_IMAGE_DRIVER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module Enemy__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 7     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+Module Enemy__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 7     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+Module Enemy 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 7     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 9     
+Module Enemy_lfsr 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
+Module merge_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module bullet 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 6     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module UART_Receive_Data 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module new_level_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module GEN_CHAR 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module CHAR_SELECT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP plusOp, operation Mode is: C+A*(B:0x35).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP plusOp, operation Mode is: C+A*(B:0x35).
+DSP Report: operator plusOp is absorbed into DSP plusOp.
+DSP Report: operator multOp is absorbed into DSP plusOp.
+DSP Report: Generating DSP Enemy1/plusOp, operation Mode is: C+A*(B:0x50).
+DSP Report: operator Enemy1/plusOp is absorbed into DSP Enemy1/plusOp.
+DSP Report: operator Enemy1/multOp is absorbed into DSP Enemy1/plusOp.
+DSP Report: Generating DSP Enemy2/plusOp, operation Mode is: C+A*(B:0x50).
+DSP Report: operator Enemy2/plusOp is absorbed into DSP Enemy2/plusOp.
+DSP Report: operator Enemy2/multOp is absorbed into DSP Enemy2/plusOp.
+DSP Report: Generating DSP Enemy3/plusOp, operation Mode is: C+A*(B:0x50).
+DSP Report: operator Enemy3/plusOp is absorbed into DSP Enemy3/plusOp.
+DSP Report: operator Enemy3/multOp is absorbed into DSP Enemy3/plusOp.
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[7] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[6] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[5] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[4] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[3] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[2] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[1] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port anode_out[0] driven by constant 1
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[15] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[14] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[13] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[12] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[11] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[10] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[9] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[8] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[7] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[6] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[5] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[4] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[3] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[2] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[1] driven by constant 0
+WARNING: [Synth 8-3917] design VGA_To_HDMI has port LED_OUT_TEST[0] driven by constant 0
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[10]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[3]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[2]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[1]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port hcount[0]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[10]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[9]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[3]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[2]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[1]
+WARNING: [Synth 8-3331] design CHAR_SELECT has unconnected port vcount[0]
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[0]' (FDRE) to 'UART1/bit_time_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[1]' (FDRE) to 'UART1/bit_time_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[2]' (FDSE) to 'UART1/bit_time_reg[4]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[3]' (FDRE) to 'UART1/bit_time_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[4]' (FDSE) to 'UART1/bit_time_reg[6]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[5]' (FDSE) to 'UART1/bit_time_reg[11]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[6]' (FDSE) to 'UART1/bit_time_reg[9]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[7]' (FDSE) to 'UART1/bit_time_reg[11]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[8]' (FDRE) to 'UART1/bit_time_reg[15]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[9]' (FDSE) to 'UART1/bit_time_reg[12]'
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[10]' (FDRE) to 'UART1/bit_time_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\UART1/bit_time_reg[12] )
+INFO: [Synth 8-3886] merging instance 'UART1/bit_time_reg[14]' (FDRE) to 'UART1/bit_time_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\UART1/bit_time_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\UART1/State_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MainCharacter0/p_0_out_inferred /\MainCharacter0/Character_X_pos_reg[0] )
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[0]' (FDRE) to 'MainCharacter0/Character_Y_pos_reg[10]'
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[1]' (FDRE) to 'MainCharacter0/Character_Y_pos_reg[3]'
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[2]' (FDSE) to 'MainCharacter0/Character_Y_pos_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[4]' (FDSE) to 'MainCharacter0/Character_Y_pos_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[5]' (FDSE) to 'MainCharacter0/Character_Y_pos_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[6]' (FDSE) to 'MainCharacter0/Character_Y_pos_reg[8]'
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[7]' (FDRE) to 'MainCharacter0/Character_Y_pos_reg[10]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\MainCharacter0/Character_Y_pos_reg[8] )
+INFO: [Synth 8-3886] merging instance 'MainCharacter0/Character_Y_pos_reg[9]' (FDRE) to 'MainCharacter0/Character_Y_pos_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MainCharacter0/Character_Y_pos_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Bullet0/bullet_X_Pos_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1137.422 ; gain = 414.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MY_IMAGE_DRIVER | C+A*(B:0x35) | 11     | 6      | 11     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|bullet          | C+A*(B:0x35) | 11     | 6      | 11     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Enemy           | C+A*(B:0x50) | 11     | 7      | 11     | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Enemy           | C+A*(B:0x50) | 11     | 7      | 11     | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Enemy           | C+A*(B:0x50) | 11     | 7      | 11     | -      | 13     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1163.363 ; gain = 440.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1185.781 ; gain = 462.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1194.789 ; gain = 471.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1199.961 ; gain = 477.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1199.961 ; gain = 477.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1199.961 ; gain = 477.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1199.961 ; gain = 477.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1199.961 ; gain = 477.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1199.961 ; gain = 477.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |hdmi_tx_0     |         1|
+|3     |bullet_rom    |         1|
+|4     |blk_mem_gen_2 |         1|
+|5     |blk_mem_gen_1 |         3|
+|6     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |blk_mem_gen_0_bbox_1    |     1|
+|2     |blk_mem_gen_1_bbox_2    |     1|
+|3     |blk_mem_gen_1_bbox_2__3 |     1|
+|4     |blk_mem_gen_1_bbox_2__4 |     1|
+|5     |blk_mem_gen_2_bbox_5    |     1|
+|6     |bullet_rom_bbox_3       |     1|
+|7     |clk_wiz_0_bbox_0        |     1|
+|8     |hdmi_tx_0_bbox_4        |     1|
+|9     |BUFG                    |     2|
+|10    |CARRY4                  |   151|
+|11    |DSP48E1                 |     5|
+|12    |LUT1                    |    46|
+|13    |LUT2                    |   309|
+|14    |LUT3                    |    94|
+|15    |LUT4                    |   217|
+|16    |LUT5                    |   127|
+|17    |LUT6                    |   166|
+|18    |MUXF7                   |     2|
+|19    |MUXF8                   |     1|
+|20    |FDCE                    |    41|
+|21    |FDPE                    |    19|
+|22    |FDRE                    |   180|
+|23    |LDC                     |     6|
+|24    |LDP                     |    11|
+|25    |IBUF                    |     2|
+|26    |OBUF                    |    24|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------------+------+
+|      |Instance           |Module                |Cells |
++------+-------------------+----------------------+------+
+|1     |top                |                      |  1490|
+|2     |  Bullet0          |bullet                |   202|
+|3     |  Display_Score    |GEN_CHAR              |    32|
+|4     |  Enemy1           |Enemy__xdcDup__1      |   122|
+|5     |  Enemy2           |Enemy__xdcDup__2      |   121|
+|6     |  Enemy3           |Enemy                 |   137|
+|7     |  Enemy_lfsr0      |Enemy_lfsr            |    23|
+|8     |  M1               |merge_display         |    29|
+|9     |  MainCharacter0   |MY_IMAGE_DRIVER       |   125|
+|10    |  UART1            |UART_Receive_Data     |   254|
+|11    |  V1               |vga_controller_640_60 |   374|
+|12    |  new_level_logic0 |new_level_logic       |    32|
++------+-------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1199.961 ; gain = 477.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1199.961 ; gain = 372.855
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1199.961 ; gain = 477.082
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1199.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1199.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  LDC => LDCE: 6 instances
+  LDP => LDPE: 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1199.961 ; gain = 739.973
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1199.961 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/19896/Repellion_Game/Repellion_Game.runs/synth_1/VGA_To_HDMI.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_To_HDMI_utilization_synth.rpt -pb VGA_To_HDMI_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 24 14:53:24 2022...

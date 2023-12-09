@@ -1,0 +1,112 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Mar 24 14:54:10 2022
+| Host         : DESKTOP-9ED2F6A running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file VGA_To_HDMI_control_sets_placed.rpt
+| Design       : VGA_To_HDMI
+| Device       : xc7s50
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    34 |
+|    Minimum number of control sets                        |    34 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   168 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    34 |
+| >= 0 to < 4        |    16 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             155 |           66 |
+| No           | No                    | Yes                    |              83 |           43 |
+| No           | Yes                   | No                     |              28 |           19 |
+| Yes          | No                    | No                     |              10 |            5 |
+| Yes          | No                    | Yes                    |              19 |            6 |
+| Yes          | Yes                   | No                     |             129 |           40 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------------------+---------------------------------------+------------------+----------------+
+|              Clock Signal              |                Enable Signal               |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------------------------------+--------------------------------------------+---------------------------------------+------------------+----------------+
+|  VSYNC_BUFG                            |                                            | new_level_logic0/new_level_flag_reg_4 |                1 |              1 |
+|  new_level_top_BUFG                    |                                            | Enemy3/Enemy3_Bullet_collision        |                1 |              1 |
+|  new_level_top_BUFG                    |                                            | Enemy1/Enemy1_Bullet_collision0       |                1 |              1 |
+|  new_level_top_BUFG                    |                                            | M1/Enemy2_Bullet_collision            |                1 |              1 |
+|  VSYNC_BUFG                            |                                            | Enemy3/new_level_flag_reg             |                1 |              1 |
+|  VSYNC_BUFG                            |                                            | new_level_logic0/new_level_flag_reg_5 |                1 |              1 |
+|  VSYNC_BUFG                            |                                            | new_level_logic0/new_level_flag_reg_1 |                1 |              1 |
+|  VSYNC_BUFG                            |                                            | new_level_logic0/new_level_flag_reg_2 |                1 |              1 |
+|  VSYNC_BUFG                            |                                            | new_level_logic0/new_level_flag_reg_3 |                1 |              1 |
+|  VSYNC_BUFG                            |                                            | new_level_logic0/new_level_flag_reg_0 |                1 |              1 |
+|  M1/Enemy3_hit_top                     |                                            | new_level_top_BUFG                    |                1 |              1 |
+|  M1/Enemy2_hit_top                     |                                            | new_level_top_BUFG                    |                1 |              1 |
+|  M1/Enemy1_hit_top                     |                                            | new_level_top_BUFG                    |                1 |              1 |
+|  new_level_logic0/new_level_flag_reg_2 |                                            | new_level_logic0/new_level_flag_reg_3 |                1 |              1 |
+|  new_level_logic0/new_level_flag_reg_0 |                                            | new_level_logic0/new_level_flag_reg_1 |                1 |              1 |
+|  new_level_logic0/new_level_flag_reg_4 |                                            | new_level_logic0/new_level_flag_reg_5 |                1 |              1 |
+|  VSYNC_BUFG                            |                                            |                                       |                3 |              4 |
+|  VSYNC_BUFG                            | new_level_logic0/E[0]                      | MainCharacter0/bounce_flag0           |                1 |              6 |
+|  clk_100MHz_IBUF_BUFG                  | UART1/action_ASCIIKey[7]_i_2_n_0           | UART1/stop_count                      |                4 |              8 |
+|  new_level_top_BUFG                    |                                            | reset_IBUF                            |                7 |              8 |
+|  C1/inst/clk_out1                      | M1/E[0]                                    | Bullet0/SR[0]                         |                4 |              8 |
+|  VSYNC_BUFG                            | Bullet0/bullet_Y_Pos0                      | Enemy3/new_level_flag_reg             |                3 |              9 |
+|  VSYNC_BUFG                            | MainCharacter0/Character_X_pos[10]_i_1_n_0 | new_level_top_BUFG                    |                3 |             10 |
+|  VSYNC_BUFG                            | UART1/E[0]                                 |                                       |                5 |             10 |
+|  C1/inst/clk_out1                      |                                            | V1/hcounter[10]_i_1_n_0               |                3 |             11 |
+|  C1/inst/clk_out1                      | V1/eqOp                                    | V1/vcounter[10]_i_1_n_0               |                7 |             11 |
+|  clk_100MHz_IBUF_BUFG                  |                                            |                                       |                8 |             13 |
+|  clk_100MHz_IBUF_BUFG                  | UART1/baud_count[0]_i_2_n_0                | UART1/baud_count[0]_i_1_n_0           |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG                  | UART1/Start_Counter                        | UART1/Start_Counter[0]_i_1_n_0        |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG                  | UART1/eqOp                                 | UART1/stop_count                      |                8 |             32 |
+|  clk_100MHz_IBUF_BUFG                  | UART1/bit_count                            | UART1/eqOp                            |                8 |             32 |
+|  VSYNC_BUFG                            |                                            | new_level_top_BUFG                    |               15 |             34 |
+|  C1/inst/clk_out1                      |                                            | H1/inst/encr/AR[0]                    |               21 |             42 |
+|  C1/inst/clk_out1                      |                                            |                                       |               58 |            154 |
++----------------------------------------+--------------------------------------------+---------------------------------------+------------------+----------------+
+
+
